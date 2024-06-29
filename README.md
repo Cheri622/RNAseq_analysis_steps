@@ -31,8 +31,10 @@ $./STAR_2.7.11b/Linux_x86_64_static/STAR
 --genomeDir ./genome/index  
 --genomeSAindexNbases 10  
 --limitGenomeGenerateRAM 10000000000  
+
 QC  
-$samtools flagstat ./bam/Aligned.sortedByCoord.out.bam  
+$samtools flagstat ./bam/Aligned.sortedByCoord.out.bam    
+
 3).Counting using featureCounts  
 download Subread package from m http://subread.sourceforge.net.  
 unzip subread-1.x.x.tar.gz    
@@ -41,6 +43,10 @@ $make -f Makefile.Linux
 
 $./subread-2.0.6-source/bin/featureCounts \  
 -p -t exon -g gene_id \  
--a ./genome/annotations.gtf  \  
--o ./counts/gal_gut_liver.featurecounts.exon.txt ./bam/*.bam
-check detail steps in shell script: star_featureCounts_1.sh
+-a ./genome/annotations.gtf  \    
+-o ./counts/gal_gut_liver.featurecounts.exon.txt ./bam/*.bam  
+
+check detail steps in shell script: star_featureCounts_1.sh  
+
+4).Analyzing RNA-seq data with DESeq2
+https://github.com/owkin/PyDESeq2
