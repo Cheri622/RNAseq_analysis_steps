@@ -12,3 +12,20 @@ In order to download the SRA files onto your machine, we use the NCBI’s SRA to
 
 $sudo apt install sra-toolkit
 
+2).Aligning and counting reads
+We will align our FASTQ files to the mouse reference genome using the RNA-seq alignment tool STAR. 
+(https://github.com/erilu/dendritic-cell-bulk-rnaseq)
+
+STAR   
+
+The basic options to generate genome indices are as follows:  
+--runThreadN NumberOfThreads  
+
+--runMode genomeGenerate  
+
+--genomeDir /path/to/genomeDir (index file output directory)  
+
+--genomeFastaFiles /path/to/genome/fasta1 /path/to/genome/fasta2 ...
+--sjdbGTFfile /path/to/annotations.gtf
+--sjdbOverhang ReadLength-1
+
