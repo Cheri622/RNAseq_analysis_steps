@@ -17,15 +17,11 @@ We will align our FASTQ files to the mouse reference genome using the RNA-seq al
 (https://github.com/erilu/dendritic-cell-bulk-rnaseq)
 
 STAR   
-
-The basic options to generate genome indices are as follows:  
+The basic options to generate genome indices are as follows:    
 --runThreadN NumberOfThreads  
-
 --runMode genomeGenerate  
-
 --genomeDir /path/to/genomeDir (index file output directory)  
-
---genomeFastaFiles /path/to/genome/fasta1 /path/to/genome/fasta2 ...
---sjdbGTFfile /path/to/annotations.gtf
---sjdbOverhang ReadLength-1
+--genomeFastaFiles /path/to/genome/fasta1 /path/to/genome/fasta2 ...  
+--sjdbGTFfile /path/to/annotations.gtf  
+--sjdbOverhang ReadLength-1  
 
