@@ -48,5 +48,9 @@ $./subread-2.0.6-source/bin/featureCounts \
 
 check detail steps in shell script: star_featureCounts_1.sh  
 
-4).Analyzing RNA-seq data with DESeq2
-https://github.com/owkin/PyDESeq2
+4).Analyzing RNA-seq data with DESeq2  
+https://github.com/owkin/PyDESeq2  
+
+5).GSEAPY: Gene Set Enrichment Analysis in Python  
+GSEAPY Example :  
+https://gseapy.readthedocs.io/en/latest/gseapy_example.html#Over-representation-analysis-by-Enrichr-web-services  
