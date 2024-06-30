@@ -40,7 +40,8 @@ $./subread-2.0.6-source/bin/featureCounts \
 -a ./genome/annotations.gtf  \    
 -o ./featurecounts.exon.txt ./bam/*.bam  
 
-4).Analyzing RNA-seq data with DESeq2 in Python   
+4).Analyzing RNA-seq data with DESeq2 in Python  
+https://www.youtube.com/watch?v=wIvxFEMQVwg  
 https://www.bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html  
 
 5).GSEA: Gene Set Enrichment Analysis (GSEA) in Python  
