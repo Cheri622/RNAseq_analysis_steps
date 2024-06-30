@@ -33,22 +33,15 @@ $./STAR_2.7.11b/Linux_x86_64_static/STAR
 QC  
 $samtools flagstat ./bam/Aligned.sortedByCoord.out.bam    
 
-3).Counting using featureCounts  
-download Subread package from http://subread.sourceforge.net.  
-unzip subread-1.x.x.tar.gz    
-$cd ./subread-2.0.6-source/src  
-$make -f Makefile.Linux    
+3).Counting using featureCounts   
 
 $./subread-2.0.6-source/bin/featureCounts \  
 -p -t exon -g gene_id \  
 -a ./genome/annotations.gtf  \    
--o ./counts/featurecounts.exon.txt ./bam/*.bam  
+-o ./featurecounts.exon.txt ./bam/*.bam  
 
 4).Analyzing RNA-seq data with DESeq2 in Python   
-https://github.com/owkin/PyDESeq2    
-DESeq2 docs:    
 https://www.bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html  
 
-5).GSEAPY: Gene Set Enrichment Analysis (GSEA) in Python  
-GSEAPY Example :  
-https://gseapy.readthedocs.io/en/latest/gseapy_example.html#Over-representation-analysis-by-Enrichr-web-services  
+5).GSEA: Gene Set Enrichment Analysis (GSEA) in Python  
+  
