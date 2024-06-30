@@ -2,7 +2,7 @@
 Workflow as:
 ![image](https://github.com/Cheri622/RNAseq_analysis_steps/assets/95024780/cbb6f3de-13a1-4550-b14b-749bd2ecd1b8)
 
-## Instruction with reference and download links
+## Instruction with reference links
 1).Raw RNA-sequencing data is usually deposited in the Gene Expression Omnibus (GEO), at https://www.ncbi.nlm.nih.gov/geo/.  
 SRA Run Selector -> Gallus gallus; RNA-Seq as: SRR6169229  
 
